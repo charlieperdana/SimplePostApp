@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OtomoTest</string>
+    <string name="title_main_page">Posts</string>
+    <string name="change_language_settings">Change Language Settings</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Input Post Id</string>
+</resources>

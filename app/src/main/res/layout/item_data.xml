@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <View
+        android:id="@+id/item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="#D3D3D3" />
+
+    <RelativeLayout
+        android:id="@+id/relatifLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+
+        <ImageView
+            android:id="@+id/img_owner_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            tools:src="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_owner_nameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/img_owner_photo"
+            android:layout_toRightOf="@id/img_owner_photo"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Mrs" />
+
+        <TextView
+            android:id="@+id/tv_owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_owner_nameTitle"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/img_owner_photo"
+            android:layout_toRightOf="@id/img_owner_photo"
+            android:textSize="25sp"
+            tools:text="Ella Kristensen" />
+
+
+        <LinearLayout
+            android:id="@+id/item_collapse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_photo_collapse"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="110dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                tools:src="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_message_alt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_owner_photo"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="8dp"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:textStyle="italic"
+                tools:text="Message" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_owner_photo"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="8dp"
+            android:textStyle="italic"
+            tools:text="Message" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
